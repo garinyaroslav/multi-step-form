@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { Wrapper, Sidebar } from './components';
+
 export const App: React.FC = () => {
-  return <>1111</>;
+  return (
+    <Wrapper>
+      <Sidebar />
+    </Wrapper>
+  );
 };
