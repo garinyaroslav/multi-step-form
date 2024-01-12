@@ -1,0 +1,104 @@
+.root {
+  h2 {
+    color: hsl(213, 96%, 18%);
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .clue {
+    color: hsl(231, 11%, 63%);
+    font-size: 18px;
+  }
+
+  .list {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 15px;
+
+    .plan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+        h3 {
+          color: hsl(213, 96%, 18%);
+          margin-bottom: 5px;
+        }
+        span {
+          font-weight: 500;
+          color: hsl(231, 11%, 63%);
+          text-decoration-line: underline;
+        }
+      }
+      .price {
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+      }
+    }
+    .addit {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-weight: 500;
+
+      .name {
+        color: hsl(231, 11%, 63%);
+      }
+      .addPrice {
+        color: hsl(213, 93%, 22%);
+      }
+    }
+  }
+  .totalPrice {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+      color: hsl(231, 11%, 63%);
+      font-weight: 500;
+    }
+    .addPrice {
+      font-size: 18px;
+      font-weight: 700;
+      color: hsl(245, 72.9%, 55.1%);
+    }
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    button {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 15px 30px;
+      color: #fff;
+      border-radius: 10px;
+      transition: transform 0.1s ease-in-out;
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+
+    .back {
+      border: 0;
+      background-color: #fff;
+      color: hsl(231, 11%, 63%);
+    }
+    .next {
+      background-color: #33c;
+    }
+  }
+}
+
+.botBorder {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

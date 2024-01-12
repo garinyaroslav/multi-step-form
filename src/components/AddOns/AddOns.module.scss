@@ -1,0 +1,86 @@
+.root {
+  .title {
+    color: hsl(213, 96%, 18%);
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .clue {
+    color: hsl(231, 11%, 63%);
+    font-size: 18px;
+  }
+
+  .options {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+
+    .option {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid hsl(233, 19%, 83%);
+      border-radius: 10px;
+      padding: 18px 25px;
+      margin-bottom: 25px;
+
+      input {
+        width: 20px;
+        height: 20px;
+      }
+      .text {
+        width: 300px;
+        margin-right: 90px;
+
+        h2 {
+          color: hsl(213, 96%, 18%);
+          line-height: 1;
+          margin-bottom: 5px;
+          font-size: 18px;
+        }
+        span {
+          color: hsl(231, 11%, 63%);
+        }
+      }
+      .price {
+        font-weight: 700;
+        color: hsl(262, 100%, 71%);
+      }
+    }
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    button {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 15px 30px;
+      color: #fff;
+      border-radius: 10px;
+      transition: transform 0.1s ease-in-out;
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+
+    .back {
+      border: 0;
+      background-color: #fff;
+      color: hsl(231, 11%, 63%);
+    }
+    .next {
+      background-color: hsl(213, 96%, 18%);
+    }
+  }
+}
+
+.selected {
+  background-color: hsl(231, 100%, 99%);
+  border: 1px solid hsl(262, 100%, 62%) !important;
+}

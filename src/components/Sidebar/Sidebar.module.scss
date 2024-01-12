@@ -1,0 +1,58 @@
+.root {
+  height: 100%;
+  width: 372px;
+  user-select: none;
+  position: relative;
+  margin-right: 15px;
+
+  img {
+    height: 100%;
+  }
+
+  .steps {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+
+    .step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      cursor: pointer;
+
+      .digit {
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 2px solid #fff;
+        border-radius: 40px;
+        text-align: center;
+        margin-right: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        transition: all 0.15s ease-in-out;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: #c9c9c9;
+          margin-bottom: 6px;
+          font-weight: 400;
+        }
+        p {
+          color: #fff;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .active {
+    background-color: hsl(228, 100%, 84%);
+    color: #000 !important;
+  }
+}
